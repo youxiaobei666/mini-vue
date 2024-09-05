@@ -4,7 +4,7 @@
  * 重点：递归调用处理子节点
  *
  * @param {Object} vnode -虚拟节点
- * @param {elememt} container -需要被挂载节点
+ * @param {HTMLElement} container -需要被挂载节点
  */
 const mount = (vnode, container) => {
   // 1. 创建出真实元素, 同时给 vnode 添加 el 属性

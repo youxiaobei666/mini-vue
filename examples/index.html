@@ -17,7 +17,7 @@
     reactive, h, createApp,
   } from '../mini-vue-core/index.js'
 
-  // 1.将被解析的 vue 组件
+  // 定义一个根组件
   let miniVueComponent = {
     data: reactive({
       count: 0,
@@ -37,7 +37,7 @@
     ,
   }
 
-  // 2. 挂载，生成真实 dom,添加到 container 容器中
+  // 2. 生成 dom，并挂载到 container 容器中
   createApp(miniVueComponent).mount('app');
 
 </script>

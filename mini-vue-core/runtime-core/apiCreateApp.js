@@ -2,6 +2,11 @@ import { mount } from "../runtime-dom/mount.js";
 import { patch } from "./patch.js";
 import { watchEffect } from "../reactivity/reactive.js";
 
+/**
+ * @param {*} rootComponent 根组件
+ * @returns
+ * 源码参：https://github.com/vuejs/core/blob/main/packages/runtime-core/src/apiCreateApp.ts#L236
+ */
 const createApp = (rootComponent) => {
   return {
     mount: (selector) => {

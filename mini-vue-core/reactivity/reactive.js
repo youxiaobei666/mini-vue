@@ -5,6 +5,7 @@
  */
 
 // 定义一个依赖管理类
+// 源码参：https://github.com/vuejs/core/blob/main/packages/reactivity/src/dep.ts#L24
 class DependencyManager {
   constructor() {
     // 使用 Set 存储订阅者（观察者）
@@ -60,6 +61,7 @@ function getDependencies(target, key) {
 }
 
 // 创建响应式对象
+// 源码参：https://github.com/vuejs/core/blob/main/packages/reactivity/src/baseHandlers.ts#L49
 function createReactiveObject(raw) {
   return new Proxy(raw, {
     // 当访问对象的属性时，收集依赖

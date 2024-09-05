@@ -6,6 +6,7 @@
  * @param {Object | Null} props  - 传递过来的参数
  * @param {Array | String} children  - 子节点
  * @return {vnode} 虚拟节点
+ * 源码参: https://github.com/vuejs/core/blob/main/packages/runtime-core/src/h.ts#L203
  */
 const h = (tagName, props, children) => {
   // 直接返回一个对象，里面包含vnode结构
